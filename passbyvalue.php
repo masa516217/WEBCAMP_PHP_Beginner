@@ -1,13 +1,10 @@
 <?php
 
-function myFunc(int $val)
-{
-    $val *= 2;
+function myFuncStringAdd(string $i, string $j): string
+  {  
+    $k = "{$i}{$j}";
     
-    echo "in myFunc, val is {$val} \n";
+    return $k;
 }
 
-
-$i = 10;
-myFunc($i);
-echo "i is {$i} \n";
+echo myFuncStringAdd("make","function");
