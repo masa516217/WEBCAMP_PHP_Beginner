@@ -1,27 +1,34 @@
 <?php
 
-class Hoge
+class MyTest2
 {
+    private $price;
+    private $name;
     
-    private static $静的プロパティ;
-    
-    
-    public static function 静的なメソッド()
+    public function setprice($V)
     {
-        echo "静的なメソッド \n";
+        $this->price = $v;
+    }
+    public function setname($t)
+    {
+        $this->name = $t;
     }
     
-    public static function set静的プロパティ($v)
+    public function getprice()
     {
-        static::$静的プロパティ = $v;
+        return $this->price;
     }
-    
-    public static function get静的プロパティ()
+    public function getname()
     {
-        return static::$静的プロパティ;
+        return $this->name;
     }
 }
-Hoge::静的なメソッド();
 
-Hoge::set静的プロパティ("set string");
-echo Hoge::get静的プロパティ() , "\n";
+$obj = new MyTest2();
+var_dump($obj);
+$obj->setprice('fff');
+echo $obj->getprice() , "\n";
+
+$obj->setname('ooo');
+echo $obj->getname() , "\n";
+
