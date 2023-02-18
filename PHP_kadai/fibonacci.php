@@ -9,9 +9,6 @@ echo "{$j} \n";
 while($j <= 10000) {
     $k = $i + $j;
     
-    
-    
-    
     echo "{$k} \n";
     
     $i = $j;
